@@ -1,0 +1,126 @@
+
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.cart-item .cart-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #28a745;
+}
+
+.cart-item .cart-quantity {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.cart-item button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-item button:hover {
+    background-color: #c82333;
+}
+
+
+
+
+.clear-cart-btn {
+    background-color: #ff4f4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.clear-cart-btn:hover {
+    background-color: #c94949;
+}
+
+.cart-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        margin-bottom: 10px;
+    }
+
+    .cart-item .cart-price {
+        margin-top: 10px;
+    }
+
+    .clear-cart-btn {
+        width: auto;
+    }
+}
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF; /* Beautiful blue color */
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 50px; /* Rounded corners for a pill-shaped button */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.2); /* Soft shadow effect */
+    cursor: pointer;
+    transform: scale(1); /* Initial scale */
+  }
+  .back-button i {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  .back-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3); /* Elevated shadow */
+  }
+  .back-button:active {
+    background-color: #004085;
+    transform: scale(1);
+    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.2);
+  }
+    

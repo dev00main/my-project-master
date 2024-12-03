@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة كتاب جديد</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h1>إضافة كتاب جديد</h1>
+
+<!-- Admin Form for Adding Books -->
+<form id="book-form">
+    <label for="category">الفئة:</label>
+    <select id="category" required>
+        <option value="كتب دينية">كتب دينية</option>
+        <option value="كتب ثقافية">كتب ثقافية</option>
+        <option value="كتب اطفال">كتب اطفال</option>
+        <option value="كتب حب">كتب حب</option>
+        <option value="روايات">روايات</option>
+    </select>
+
+    <label for="image-src">رابط الصورة:</label>
+    <input type="text" id="image-src" placeholder="رابط صورة الكتاب" required>
+
+    <label for="price">السعر:</label>
+    <input type="number" id="price" placeholder="السعر" required>
+
+    <button type="submit">إضافة الكتاب</button>
+</form>
+
+<script src="app.js"></script>
+
+</body>
+</html>

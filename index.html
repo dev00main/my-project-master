@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <img src="hand-drawn-bookstore-logo_23-2149331221a.avif" class="logo2" />
+
+    <div id="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cart-count">0</span>
+    </div>
+
+    <div class="btttn">
+        <button>Home</button>
+        <a href="about.html" class="link"><button>About us</button></a>
+        <button>Contact us</button>
+     <a href="admin.html" class="link1">  <button >Admin</button></a> 
+        <a href="log.html" class="link2"><button>Log out</button></a>
+    </div>
+
+    <div class="dropdown">
+        <div class="top-bar">
+            <input type="text" id="authorInput" placeholder="Search by category">
+            <button onclick="searchBooks()">
+            <i class="fas fa-search"></i> Search</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li onclick="selectCategory('كتب ثقافية')">كتب ثقافية</li>
+                    <li onclick="selectCategory('روايات')">روايات</li>
+                    <li onclick="selectCategory('كتب اطفال')">كتب اطفال</li>
+                    <li onclick="selectCategory('كتب حب')">كتب حب</li>
+                    <li onclick="selectCategory('كتب دينية')">كتب دينية</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--where search results will be displayed after the user performs a search (the results will be dynamically updated via JavaScript).-->
+    <div id="bookResults"></div>
+    <script src="script.js"></script>
+</body>
+</html>
